@@ -49,7 +49,7 @@ h2 {
     color:bisque;
 }
 
-@media (max-width : 600px) {
+@media (max-width : 1000px) {
     .background {
         background-image: url("./images/backgroundM.jpg");
     }
