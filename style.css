@@ -51,6 +51,14 @@ h2 {
 
 @media (max-width : 1000px) {
     .background {
-        background-image: url("./images/backgroundM.jpg");
+        background-image: none;
+    }
+    
+    .gameContainer{
+        color: black;
+    }
+
+    h2 {
+        color: black;
     }
 }
