@@ -1,5 +1,6 @@
 .background {
     background-image: url("./images/background.jpg");
+    /* background-image: linear-gradient(green,red); */
     background-repeat:repeat-x;
     height: 110vh;
 }
@@ -48,8 +49,8 @@ h2 {
     color:bisque;
 }
 
-@media (max-width = 600px) {
+@media (max-width : 1000px) {
     .background {
-        height: 100vh;
+        background-image: url("./images/backgroundM.jpg");
     }
 }
