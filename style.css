@@ -61,4 +61,8 @@ h2 {
     h2 {
         color: black;
     }
+    button {
+        background-color: black;
+        color: white;
+    }
 }
