@@ -1,0 +1,48 @@
+body {
+    background-image: url("./images/background.jpg");
+    height: 100vh;
+}
+
+.but {
+    border: 2px solid #693932;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px #693932;
+    font-size: 3.5rem;
+    padding-top: 2.5rem;
+    min-width: 10rem;
+    min-height: 5rem;
+}
+
+.container {
+    text-align: center;
+    width: fit-content;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    margin: auto;
+}
+
+.gameContainer {
+    font-family: "Permanent Marker",cursive;
+    color:rgb(209, 233, 246);
+    text-align: center;
+}
+
+button {
+    font-family: "Permanent Marker",cursive;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #b887f2;
+    color: rgb(31, 49, 111);
+    font-weight: bold;
+}
+
+h2 {
+    color:bisque;
+}
+
+@media (max-width = 600px) {
+
+}
