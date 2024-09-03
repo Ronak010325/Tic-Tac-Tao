@@ -25,11 +25,7 @@ function initialize() {
     running=true;
     $(".but").click(cellClicked);
     restartBtn.click(restart);
-    if(currentPlayer == "X") {
-        $(statusText).text("❌'s turn");
-    } else {
-        $(statusText).text("⭕'s turn");
-    }
+        $(statusText).text(currentPlayer+"'s turn");
     // statusText.text(currentPlayer+"'s Turn");
 }
 
@@ -49,20 +45,12 @@ function cellClicked() {
 function updateCell(cell , index) {
 
     places[index] = currentPlayer;
-    if(currentPlayer == "X") {
-        $(cell).text("❌");
-    } else {
-        $(cell).text("⭕");
-    }
+    $(cell).text(currentPlayer);
 }
 
 function changePlayer() {
     currentPlayer = (currentPlayer == "X") ? "O" : "X";
-    if(currentPlayer == "X") {
-        $(statusText).text("❌'s turn");
-    } else {
-        $(statusText).text("⭕'s turn");
-    }
+    $(statusText).text(currentPlayer+"'s turn");
 }
 
 function winner() {
@@ -90,11 +78,7 @@ function winner() {
     }
 
     if(roundWon){
-        if(currentPlayer == "X") {
-            $(statusText).text("❌ wins !!");
-        } else {
-            $(statusText).text("⭕ wins !!");
-        }
+        $(statusText).text(currentPlayer+" wins !!");
     //    $(statusText).text(currentPlayer+" Wins !!");
        running = false;
        $(restartBtn).slideDown();
@@ -112,7 +96,7 @@ function restart() {
     //Intitalize everything to start
     places = ["","","","","","","","",""];
     currentPlayer = "X";
-    $(statusText).text("❌'s turn");
+    $(statusText).text(currentPlayer+"'s turn");
     
     //remove all the text's (i.e : X,O)
     $(".but").text("");
